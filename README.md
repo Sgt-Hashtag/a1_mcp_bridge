@@ -6,3 +6,19 @@ This package provides a **Model Context Protocol (MCP)** interface for the Unitr
 1. **Dependencies**: 
    ```bash
    pip install mcp fastmcp
+
+2. **Build**
+   ```bash
+   cd ~/Unitree_ws
+   catkin_make
+   source devel/setup.bash
+
+## Usage
+   ```bash
+   roslaunch a1_mcp_bridge bridge.launch
+   ```
+
+## Features
+  - ***Tools***: get_robot_telemetry, set_gait, emergency_stop.
+  - ***​Newton Integration***: Syncs real-time foot forces to the Newton Solver for RL verification.
+  - ***​LLM Connection***: Add the server to your claude_desktop_config.json to allow Claude to control the A1.
