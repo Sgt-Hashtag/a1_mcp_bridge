@@ -1,2 +1,8 @@
-# a1_mcp_bridge
-An MCP (Model Context Protocol) server for Unitree A1 essentially allowing LLMs (like Claude or ChatGPT) to "interface" directly with the robot's sensors and actuators using a standardized protocol.
+# A1 MCP Bridge
+
+This package provides a **Model Context Protocol (MCP)** interface for the Unitree A1 robot. It bridges the gap between the low-level C++ control loop and LLM-based tools.
+
+## Setup
+1. **Dependencies**: 
+   ```bash
+   pip install mcp fastmcp
